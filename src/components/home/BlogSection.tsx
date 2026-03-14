@@ -5,33 +5,33 @@ import { Calendar, User, ArrowRight } from "lucide-react";
 const POSTS = [
     {
         id: 1,
-        title: "5 Signs Your Home Air Quality is Poor",
-        excerpt: "Learn the subtle indicators that your indoor air might be harming your health, from persistent headaches to dust buildup.",
-        image: "/images/blogs/poor-air.png",
-        date: "Oct 12, 2024",
-        author: "Dr. A. Sharma",
-        category: "Health",
-        link: "/blogs/poor-air-quality-signs"
-    },
-    {
-        id: 2,
         title: "HEPA vs. Carbon Filters: What's the Difference?",
         excerpt: "Understand the technology behind air purification. We break down which filter type is best for smoke, dust, and odors.",
-        image: "/images/blogs/hepa-vs-carbon.png",
+        image: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80",
         date: "Nov 05, 2024",
         author: "R. Verma",
         category: "Technology",
-        link: "/blogs/hepa-vs-carbon"
+        link: "/blogs/hepa-vs-carbon-filter"
+    },
+    {
+        id: 2,
+        title: "India's Air Pollution Crisis: What You Need to Know",
+        excerpt: "India has 9 of the world's 10 most polluted cities. Here's what the data says and what you can do to protect yourself.",
+        image: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=600&q=80",
+        date: "Jan 15, 2025",
+        author: "Antia Team",
+        category: "News",
+        link: "/blogs/india-air-pollution-2025"
     },
     {
         id: 3,
-        title: "Best Air Purifiers for Delhi Winters",
-        excerpt: "As the smog season approaches, find out which heavy-duty purifiers are rated best for high AQI levels in North India.",
-        image: "/images/blogs/poor-air.png",
-        date: "Nov 20, 2024",
-        author: "PureAir Team",
+        title: "Best Air Purifier for Your Bedroom",
+        excerpt: "You spend 8 hours sleeping — make sure the air is clean. Our guide to the quietest, most effective bedroom air purifiers.",
+        image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80",
+        date: "Feb 10, 2025",
+        author: "Antia Team",
         category: "Guides",
-        link: "/blogs/delhi-winter-guide"
+        link: "/blogs/best-air-purifier-bedroom"
     }
 ];
 

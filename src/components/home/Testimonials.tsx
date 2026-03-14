@@ -6,7 +6,7 @@ const REVIEWS = [
         name: "Aditi Sharma",
         location: "Delhi",
         rating: 5,
-        text: "Living in Delhi, an air purifier is a must. Renting from PureAir was the best decision. The service is prompt and the device works perfectly.",
+        text: "Living in Delhi, an air purifier is a must. Renting from Antia was the best decision. The service is prompt and the device works perfectly.",
         image: "https://placehold.co/100x100/e0f2fe/1e40af?text=AS",
     },
     {

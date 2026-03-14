@@ -9,14 +9,14 @@ export function About() {
                     <div className="flex-1">
                         <img
                             src="https://placehold.co/600x400/e0f2fe/1e40af?text=Our+Mission"
-                            alt="About PureAir"
+                            alt="About Antia"
                             className="rounded-2xl shadow-lg w-full object-cover"
                         />
                     </div>
                     <div className="flex-1 space-y-6">
                         <h2 className="text-3xl font-bold text-gray-900">Combating India's Air Pollution</h2>
                         <p className="text-lg text-gray-600">
-                            At PureAir, we believe that breathing clean air is a fundamental right, not a luxury.
+                            At Antia, we believe that breathing clean air is a fundamental right, not a luxury.
                             Founded in 2024, we are on a mission to make high-quality air purification accessible to every Indian household.
                         </p>
 
