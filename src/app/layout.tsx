@@ -7,6 +7,7 @@ import { ShopProvider } from "@/context/ShopContext";
 import { CartProvider } from "@/context/CartContext";
 import { AuthProvider } from "@/context/AuthContext";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
+import { db } from "@/lib/db";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,9 +41,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const settings = db.settings.get();
+  const headCode = settings?.globalHeadCode || "";
+  const bodyCode = settings?.globalBodyCode || "";
+
   return (
     <html lang="en">
+      <head>
+        {headCode && <div dangerouslySetInnerHTML={{ __html: headCode }} />}
+      </head>
       <body className={inter.className}>
+        {bodyCode && <div dangerouslySetInnerHTML={{ __html: bodyCode }} />}
         <ShopProvider>
           <AuthProvider>
           <CartProvider>

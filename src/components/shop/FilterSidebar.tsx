@@ -1,9 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown, ChevronUp, X } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
-export function FilterSidebar() {
+interface FilterSidebarProps {
+    minPrice?: string;
+    maxPrice?: string;
+    onMinPrice?: (val: string) => void;
+    onMaxPrice?: (val: string) => void;
+}
+
+export function FilterSidebar({ minPrice = "", maxPrice = "", onMinPrice, onMaxPrice }: FilterSidebarProps) {
     const [openSection, setOpenSection] = useState<string | null>("price");
 
     const toggleSection = (section: string) => {
@@ -12,14 +19,6 @@ export function FilterSidebar() {
 
     return (
         <div className="w-full md:w-64 flex-shrink-0 space-y-8">
-            {/* Header (Mobile Only) */}
-            <div className="flex items-center justify-between md:hidden">
-                <h3 className="text-lg font-bold">Filters</h3>
-                <button className="p-2 text-gray-500">
-                    <X className="h-5 w-5" />
-                </button>
-            </div>
-
             {/* Price Range */}
             <div className="border-b border-gray-200 pb-6">
                 <button
@@ -30,21 +29,27 @@ export function FilterSidebar() {
                     {openSection === "price" ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
                 </button>
                 {openSection === "price" && (
-                    <div className="mt-4 space-y-4">
-                        <div className="flex items-center gap-4">
+                    <div className="mt-4 space-y-3">
+                        <div className="flex items-center gap-3">
                             <input
                                 type="number"
-                                placeholder="Min"
-                                className="w-full rounded border border-gray-300 px-3 py-2 text-sm"
+                                placeholder="Min ₹"
+                                value={minPrice}
+                                onChange={e => onMinPrice?.(e.target.value)}
+                                className="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none"
                             />
-                            <span className="text-gray-400">-</span>
+                            <span className="text-gray-400 flex-shrink-0">–</span>
                             <input
                                 type="number"
-                                placeholder="Max"
-                                className="w-full rounded border border-gray-300 px-3 py-2 text-sm"
+                                placeholder="Max ₹"
+                                value={maxPrice}
+                                onChange={e => onMaxPrice?.(e.target.value)}
+                                className="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 outline-none"
                             />
                         </div>
-                        <input type="range" className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer" />
+                        {(minPrice || maxPrice) && (
+                            <button onClick={() => { onMinPrice?.(""); onMaxPrice?.(""); }} className="text-xs text-blue-600 hover:underline">Clear price filter</button>
+                        )}
                     </div>
                 )}
             </div>

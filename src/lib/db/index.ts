@@ -181,6 +181,49 @@ export const db = {
         },
     },
 
+    blogs: {
+        getAll: () => readDB().blogs ?? [],
+        getById: (id: string) => (readDB().blogs ?? []).find(b => b.id === id),
+        getBySlug: (slug: string) => (readDB().blogs ?? []).find(b => b.slug === slug),
+        getPublished: () => (readDB().blogs ?? []).filter(b => b.published),
+        getFeatured: () => (readDB().blogs ?? []).filter(b => b.published && b.featured),
+        create: (blog: any) => {
+            const data = readDB();
+            if (!data.blogs) data.blogs = [];
+            data.blogs.push(blog);
+            writeDB(data);
+            return blog;
+        },
+        update: (id: string, updates: Partial<any>) => {
+            const data = readDB();
+            if (!data.blogs) data.blogs = [];
+            const index = data.blogs.findIndex(b => b.id === id);
+            if (index !== -1) {
+                data.blogs[index] = { ...data.blogs[index], ...updates, updatedAt: new Date().toISOString() };
+                writeDB(data);
+                return data.blogs[index];
+            }
+            return null;
+        },
+        delete: (id: string) => {
+            const data = readDB();
+            if (!data.blogs) data.blogs = [];
+            data.blogs = data.blogs.filter(b => b.id !== id);
+            writeDB(data);
+        },
+    },
+
+    contacts: {
+        getAll: () => readDB().contacts ?? [],
+        create: (contact: any) => {
+            const data = readDB();
+            if (!data.contacts) data.contacts = [];
+            data.contacts.push(contact);
+            writeDB(data);
+            return contact;
+        },
+    },
+
     orders: {
         getAll: () => readDB().orders ?? [],
         getById: (id: string) => (readDB().orders ?? []).find(o => o.id === id),

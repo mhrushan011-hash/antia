@@ -249,7 +249,7 @@ export default function ProductDetails({ product }: { product: Product }) {
                 {/* Right Col: Why Choose & Benefits */}
                 <div className="space-y-6">
                     <div className="bg-gray-50 rounded-xl p-6">
-                        <h3 className="font-bold text-gray-900 mb-4">Why Choose PureAir?</h3>
+                        <h3 className="font-bold text-gray-900 mb-4">Why Choose Antia?</h3>
                         <ul className="space-y-4">
                             <li className="flex gap-3">
                                 <Shield className="h-5 w-5 text-blue-600 flex-shrink-0" />

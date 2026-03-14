@@ -143,6 +143,33 @@ export interface Order {
     updatedAt: string;
 }
 
+export interface Blog {
+    id: string;
+    title: string;
+    slug: string;
+    excerpt: string;
+    content: string;
+    image: string;
+    altText: string;
+    author: string;
+    category: string;
+    tags: string[];
+    published: boolean;
+    featured: boolean;
+    readTime: string;
+    seo: SEOData;
+    createdAt: string;
+    updatedAt: string;
+}
+
+export interface Contact {
+    id: string;
+    name: string;
+    email: string;
+    message: string;
+    createdAt: string;
+}
+
 // Database structure
 export interface Database {
     products: Product[];
@@ -154,4 +181,6 @@ export interface Database {
     users: User[];
     customers: Customer[];
     orders: Order[];
+    blogs: Blog[];
+    contacts: Contact[];
 }

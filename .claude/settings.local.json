@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"D:/1_campaigns/1_Clicqify/antia\" && npx tsc --noEmit 2>&1 | grep -v \"^$\")",
+      "Bash(curl -s \"http://localhost:3001/api/search?q=coway\" 2>/dev/null | python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('Products:', [p['name'] for p in d['products']]\\); print\\('Pages:', [p['label'] for p in d['pages']]\\)\")",
+      "Bash(curl -s \"http://localhost:3001/api/search?q=filter\" 2>/dev/null | python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('Products:', [p['name'] for p in d['products']]\\); print\\('Pages:', [p['label'] for p in d['pages']]\\)\")",
+      "Bash(gh auth:*)",
+      "Bash(git --version 2>&1\nnode --version 2>&1)",
+      "Bash(npm install:*)",
+      "Bash(vercel --version 2>&1)",
+      "Bash(node -e \"console.log\\(require\\('crypto'\\).randomBytes\\(32\\).toString\\('hex'\\)\\)\")",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "Bash(cd \"D:/1_campaigns/1_Clicqify/antia\" && node -e \"console.log\\(require\\('./node_modules/next/package.json'\\).version\\)\")",
+      "Bash(wc -l /d/1_campaigns/1_Clicqify/antia/src/components/home/*.tsx)",
+      "Bash(cd \"D:/1_campaigns/1_Clicqify/antia\" && npm run build 2>&1 | tail -40)"
+    ]
+  }
+}
