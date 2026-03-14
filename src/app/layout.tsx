@@ -47,10 +47,8 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <head>
-        {headCode && <div dangerouslySetInnerHTML={{ __html: headCode }} />}
-      </head>
       <body className={inter.className}>
+        {headCode && <div dangerouslySetInnerHTML={{ __html: headCode }} />}
         {bodyCode && <div dangerouslySetInnerHTML={{ __html: bodyCode }} />}
         <ShopProvider>
           <AuthProvider>
