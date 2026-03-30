@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { jwtVerify } from "jose";
+import { cookies } from "next/headers";
 import { db } from "@/lib/db";
 import { v4 as uuidv4 } from "uuid";
 
@@ -13,6 +14,18 @@ async function getCustomerId(request: NextRequest): Promise<string | null> {
         return payload.customerId as string;
     } catch {
         return null;
+    }
+}
+
+async function isAdminAuthed(): Promise<boolean> {
+    try {
+        const cookieStore = await cookies();
+        const token = cookieStore.get("auth-token")?.value;
+        if (!token) return false;
+        await jwtVerify(token, JWT_SECRET);
+        return true;
+    } catch {
+        return false;
     }
 }
 
@@ -51,8 +64,15 @@ export async function POST(request: NextRequest) {
     }
 }
 
-// Get orders for logged-in customer
+// Get orders — admin gets all, customer gets their own
 export async function GET(request: NextRequest) {
+    const admin = request.nextUrl.searchParams.get("admin");
+
+    if (admin && (await isAdminAuthed())) {
+        const orders = db.orders.getAll();
+        return NextResponse.json({ orders });
+    }
+
     const customerId = await getCustomerId(request);
     const email = request.nextUrl.searchParams.get("email");
 
@@ -66,4 +86,19 @@ export async function GET(request: NextRequest) {
     }
 
     return NextResponse.json({ orders });
+}
+
+// Update order (admin only — status changes)
+export async function PUT(request: NextRequest) {
+    if (!(await isAdminAuthed())) {
+        return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+    try {
+        const { id, ...updates } = await request.json();
+        const order = db.orders.update(id, updates);
+        if (!order) return NextResponse.json({ error: "Not found" }, { status: 404 });
+        return NextResponse.json({ success: true, order });
+    } catch {
+        return NextResponse.json({ error: "Failed to update order" }, { status: 500 });
+    }
 }

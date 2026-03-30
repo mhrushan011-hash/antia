@@ -18,6 +18,8 @@ export default function AdminDashboard() {
     const menuItems = [
         { icon: LayoutDashboard, label: "Dashboard", href: "/admin/dashboard" },
         { icon: Package, label: "Products", href: "/admin/products" },
+        { icon: ShoppingBag, label: "Orders", href: "/admin/orders" },
+        { icon: Users, label: "Customers", href: "/admin/customers" },
         { icon: BookOpen, label: "Blogs", href: "/admin/blogs" },
         { icon: FileText, label: "Pages", href: "/admin/pages" },
         { icon: MenuIcon, label: "Menu", href: "/admin/menu" },
@@ -66,8 +68,8 @@ export default function AdminDashboard() {
                             {[
                                 { label: "Products", value: products.length, icon: Package, color: "text-blue-600", bg: "bg-blue-50", href: "/admin/products" },
                                 { label: "Blog Posts", value: blogs.length, icon: BookOpen, color: "text-green-600", bg: "bg-green-50", href: "/admin/blogs" },
-                                { label: "Orders", value: orders.length, icon: ShoppingBag, color: "text-orange-600", bg: "bg-orange-50", href: "/admin/dashboard" },
-                                { label: "Customers", value: customers.length, icon: Users, color: "text-purple-600", bg: "bg-purple-50", href: "/admin/dashboard" },
+                                { label: "Orders", value: orders.length, icon: ShoppingBag, color: "text-orange-600", bg: "bg-orange-50", href: "/admin/orders" },
+                                { label: "Customers", value: customers.length, icon: Users, color: "text-purple-600", bg: "bg-purple-50", href: "/admin/customers" },
                                 { label: "Media Files", value: media.length, icon: Image, color: "text-pink-600", bg: "bg-pink-50", href: "/admin/media" },
                                 { label: "Redirects", value: redirects.length, icon: ArrowLeftRight, color: "text-yellow-600", bg: "bg-yellow-50", href: "/admin/redirects" },
                             ].map(stat => (
@@ -85,11 +87,12 @@ export default function AdminDashboard() {
                         {/* Quick Actions */}
                         <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
                             <h3 className="text-xl font-bold text-gray-900 mb-4">Quick Actions</h3>
-                            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                            <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
                                 {[
                                     { href: "/admin/products", icon: Package, label: "Add Product", desc: "Create a new product listing", color: "blue" },
                                     { href: "/admin/blogs", icon: BookOpen, label: "Write Blog Post", desc: "Publish new content", color: "green" },
                                     { href: "/admin/settings", icon: Settings, label: "Site Settings", desc: "Update SEO, branding, logo", color: "purple" },
+                                    { href: "/admin/orders", icon: ShoppingBag, label: "Manage Orders", desc: "View and update orders", color: "orange" },
                                     { href: "/admin/media", icon: Image, label: "Upload Media", desc: "Add images to library", color: "pink" },
                                 ].map(action => (
                                     <Link key={action.href} href={action.href}
