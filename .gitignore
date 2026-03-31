@@ -42,6 +42,12 @@ yarn-error.log*
 # leftover files from other projects
 /hen_heaven_menu
 
+# claude worktrees and playwright logs
+.claude/worktrees/
+.playwright-mcp/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.vercel
