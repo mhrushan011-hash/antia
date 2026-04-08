@@ -8,7 +8,7 @@ export function About() {
                 <div className="flex flex-col md:flex-row items-center gap-12">
                     <div className="flex-1">
                         <img
-                            src="https://placehold.co/600x400/e0f2fe/1e40af?text=Our+Mission"
+                            src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&q=80"
                             alt="About Antia"
                             className="rounded-2xl shadow-lg w-full object-cover"
                         />

@@ -12,7 +12,7 @@ const BANNERS = [
         cta: "Explore Rentals",
         link: "/rent",
         bgClass: "bg-blue-600",
-        image: "https://placehold.co/800x400/2563eb/white?text=Rent+Air+Purifiers",
+        image: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80",
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ const BANNERS = [
         cta: "Shop Now",
         link: "/buy",
         bgClass: "bg-green-600",
-        image: "https://placehold.co/800x400/16a34a/white?text=Buy+Air+Purifiers",
+        image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80",
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ const BANNERS = [
         cta: "View Offers",
         link: "/offers",
         bgClass: "bg-gray-800",
-        image: "https://placehold.co/800x400/1f2937/white?text=Winter+Sale",
+        image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=80",
     },
 ];
 

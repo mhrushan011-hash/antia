@@ -52,7 +52,7 @@ export default async function BlogDetailPage({ params }: Props) {
         description: blog.excerpt,
         image: blog.image,
         author: { "@type": "Organization", name: "Antia" },
-        publisher: { "@type": "Organization", name: "Antia", logo: { "@type": "ImageObject", url: "/logo.png" } },
+        publisher: { "@type": "Organization", name: "Antia", logo: { "@type": "ImageObject", url: "/logo.svg" } },
         datePublished: blog.createdAt,
         dateModified: blog.updatedAt,
         mainEntityOfPage: { "@type": "WebPage", "@id": blog.seo.canonical },

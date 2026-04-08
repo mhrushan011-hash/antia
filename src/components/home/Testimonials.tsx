@@ -7,7 +7,7 @@ const REVIEWS = [
         location: "Delhi",
         rating: 5,
         text: "Living in Delhi, an air purifier is a must. Renting from Antia was the best decision. The service is prompt and the device works perfectly.",
-        image: "https://placehold.co/100x100/e0f2fe/1e40af?text=AS",
+        image: "https://api.dicebear.com/7.x/initials/svg?seed=AS&backgroundColor=dbeafe&fontColor=1e40af",
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const REVIEWS = [
         location: "Mumbai",
         rating: 5,
         text: "I bought the Coway AirMega. Delivery was super fast and the installation team explained everything clearly. Highly recommended!",
-        image: "https://placehold.co/100x100/f0fdf4/166534?text=RV",
+        image: "https://api.dicebear.com/7.x/initials/svg?seed=RV&backgroundColor=dcfce7&fontColor=166534",
     },
     {
         id: 3,
@@ -23,7 +23,7 @@ const REVIEWS = [
         location: "Bangalore",
         rating: 4,
         text: "Great concept for rentals. I move cities often so this is perfect for me. Just wish they had more color options for the devices.",
-        image: "https://placehold.co/100x100/fff7ed/9a3412?text=SG",
+        image: "https://api.dicebear.com/7.x/initials/svg?seed=SG&backgroundColor=ffedd5&fontColor=9a3412",
     },
 ];
 
