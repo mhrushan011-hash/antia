@@ -21,7 +21,7 @@ function getBrandFromName(name: string): string {
 export function ProductCard({ product, mode }: ProductCardProps) {
     const { addToCart } = useCart();
     const brand = getBrandFromName(product.name);
-    const image = product.images[0] ?? "https://placehold.co/400x400/e2e8f0/475569?text=Air+Purifier";
+    const image = product.images[0] ?? "https://image.pollinations.ai/prompt/white%20HEPA%20air%20purifier%20product%20photo%20studio%20white%20background%20minimal%20clean?width=400&height=400&seed=999&nologo=true";
     const coverage = product.specifications?.coverage ?? "—";
     const filterType = product.features?.[0] ?? "HEPA Filter";
     const rating = 4.5;

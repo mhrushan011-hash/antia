@@ -142,7 +142,7 @@ const initialData: Database = {
             description: 'Compact high-efficiency air purifier designed for cars. Removes dust, smoke, and odors quickly.',
             features: ['HEPA Filter', 'Car Adapter', 'Silent Operation'],
             specifications: { coverage: 'Car Interior', cadr: '50 m³/h', power: '5W' },
-            images: ['https://placehold.co/600x600/e2e8f0/475569?text=Car+Purifier'],
+            images: ['https://image.pollinations.ai/prompt/compact%20car%20air%20purifier%20device%20vent%20clip%20vehicle%20interior%20small%20sleek%20white%20HEPA%20product%20photography%20studio?width=600&height=600&seed=601&nologo=true'],
             altTexts: ['Car Purifier'],
             seo: { metaTitle: 'Car Air Purifier', metaDescription: 'Best car air purifier for pollution', h1: 'Antia Car Air Purifier', canonical: '', keywords: [] },
             createdAt: new Date().toISOString(),
@@ -229,7 +229,7 @@ const initialData: Database = {
 
 <h2>How Often Do Filters Need Replacing?</h2>
 <p>HEPA filters typically last 12–18 months with normal use. Carbon filters exhaust faster — usually 6–12 months, depending on air quality and usage. One advantage of renting from Antia: filter replacements are included at no extra cost.</p>`,
-            image: '/images/blogs/hepa-vs-carbon.png',
+            image: 'https://image.pollinations.ai/prompt/HEPA%20filter%20vs%20activated%20carbon%20filter%20comparison%20air%20purifier%20filter%20types%20India%20clean%20white%20background%20technical%20photography?width=800&height=450&seed=611&nologo=true',
             altText: 'HEPA vs Carbon Filter comparison diagram',
             author: 'Antia Team',
             category: 'Guides',
@@ -278,7 +278,7 @@ const initialData: Database = {
 <h2>What You Can Do</h2>
 <p>An air purifier with a true HEPA filter reduces indoor PM2.5 by up to 99.97%. For a 300 sq ft room running at medium speed, a quality purifier like the Coway AirMega or Philips AC1215 can reduce particulate matter to safe levels within 20–30 minutes.</p>
 <p>Antia offers rental options starting at ₹399/month — so clean air doesn't have to be a luxury.</p>`,
-            image: '/images/blogs/poor-air.png',
+            image: 'https://image.pollinations.ai/prompt/Delhi%20India%20severe%20air%20pollution%20smog%20city%20skyline%20heavy%20haze%20orange%20atmospheric%20photography%20crisis%20dramatic?width=800&height=450&seed=612&nologo=true',
             altText: 'Smog over Indian city skyline',
             author: 'Antia Team',
             category: 'News',
@@ -324,7 +324,7 @@ const initialData: Database = {
 
 <h2>Placement Tips</h2>
 <p>Place your purifier near the bed but not directly blowing on your face. Keep bedroom doors and windows closed when running. Run it for 30 minutes before bedtime to pre-clean the air, then leave on low through the night.</p>`,
-            image: 'https://placehold.co/800x450/e0f2fe/1e40af?text=Bedroom+Purifier',
+            image: 'https://image.pollinations.ai/prompt/white%20air%20purifier%20modern%20Indian%20bedroom%20nightstand%20cozy%20ambient%20lighting%20clean%20air%20sleeping%20environment%20lifestyle?width=800&height=450&seed=613&nologo=true',
             altText: 'Air purifier in a clean bedroom setting',
             author: 'Antia Team',
             category: 'Buying Guides',
@@ -390,7 +390,7 @@ const initialData: Database = {
 
 <h2>Our Recommendation</h2>
 <p>For most urban Indian renters: <strong>start with a rental</strong>. You protect your lungs immediately, pay a fraction of the upfront cost, and have full flexibility. If you love it and plan to stay put, switch to a purchase after 12 months.</p>`,
-            image: 'https://placehold.co/800x450/f0fdf4/166534?text=Rent+vs+Buy',
+            image: 'https://image.pollinations.ai/prompt/air%20purifier%20rental%20vs%20purchase%20comparison%20India%20modern%20infographic%20clean%20minimal%20design%20cost%20analysis?width=800&height=450&seed=614&nologo=true',
             altText: 'Comparison chart of renting vs buying an air purifier',
             author: 'Antia Team',
             category: 'Guides',
@@ -440,7 +440,7 @@ const initialData: Database = {
 <p>MERV-13 filters last 6–12 months depending on air quality. Check them monthly — when they look grey/black, it's time to replace. Cost: ₹800–₹1,200 for a set of 4 replacement filters.</p>
 
 <p>If you'd rather skip the build, our <a href="/product/cr-box-kit">pre-assembled CR Box kit</a> (₹3,499) is ready to plug in.</p>`,
-            image: 'https://placehold.co/800x450/fef3c7/92400e?text=DIY+CR+Box',
+            image: 'https://image.pollinations.ai/prompt/Corsi-Rosenthal%20DIY%20air%20purifier%20box%20fan%20MERV-13%20filters%20assembled%20cardboard%20duct%20tape%20India%20budget%20build?width=800&height=450&seed=615&nologo=true',
             altText: 'Corsi-Rosenthal Box DIY air purifier assembly',
             author: 'Antia Team',
             category: 'DIY',
@@ -507,7 +507,7 @@ const initialData: Database = {
 
 <h2>Protection: What Actually Works</h2>
 <p>A HEPA air purifier is the most effective indoor protection against PM2.5. Running a quality purifier in your bedroom and living room can reduce indoor PM2.5 by 97–99%+ even when outdoor AQI is 300+. N95 masks provide protection outdoors, blocking 95% of particles 0.3 microns and above.</p>`,
-            image: 'https://placehold.co/800x450/f3e8ff/7c3aed?text=PM2.5+Particles',
+            image: 'https://image.pollinations.ai/prompt/PM2.5%20particles%20microscopic%20illustration%20compared%20to%20human%20hair%20air%20pollution%20health%20effects%20blue%20background%20science?width=800&height=450&seed=616&nologo=true',
             altText: 'Microscopic illustration of PM2.5 particles compared to human hair',
             author: 'Antia Team',
             category: 'Health',

@@ -8,7 +8,7 @@ export function About() {
                 <div className="flex flex-col md:flex-row items-center gap-12">
                     <div className="flex-1">
                         <img
-                            src="https://placehold.co/600x400/e0f2fe/1e40af?text=Our+Mission"
+                            src="https://image.pollinations.ai/prompt/happy%20Indian%20family%20modern%20apartment%20air%20purifier%20visible%20parents%20child%20breathing%20clean%20air%20Delhi%20lifestyle%20photography%20warm%20lighting?width=600&height=400&seed=200&nologo=true"
                             alt="About Antia"
                             className="rounded-2xl shadow-lg w-full object-cover"
                         />

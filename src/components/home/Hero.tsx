@@ -12,7 +12,7 @@ const BANNERS = [
         cta: "Explore Rentals",
         link: "/rent",
         bgClass: "bg-blue-600",
-        image: "https://placehold.co/800x400/2563eb/white?text=Rent+Air+Purifiers",
+        image: "https://image.pollinations.ai/prompt/premium%20white%20air%20purifier%20modern%20Indian%20living%20room%20hazy%20Delhi%20winter%20smog%20visible%20through%20window%20blue%20ambient%20lighting%20lifestyle%20photography?width=800&height=500&seed=42&nologo=true",
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ const BANNERS = [
         cta: "Shop Now",
         link: "/buy",
         bgClass: "bg-green-600",
-        image: "https://placehold.co/800x400/16a34a/white?text=Buy+Air+Purifiers",
+        image: "https://image.pollinations.ai/prompt/sleek%20modern%20HEPA%20air%20purifier%20bright%20Indian%20apartment%20Philips%20Dyson%20Coway%20multiple%20models%20clean%20air%20product%20photography%20white%20background?width=800&height=500&seed=43&nologo=true",
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ const BANNERS = [
         cta: "View Offers",
         link: "/offers",
         bgClass: "bg-gray-800",
-        image: "https://placehold.co/800x400/1f2937/white?text=Winter+Sale",
+        image: "https://image.pollinations.ai/prompt/Delhi%20winter%20smog%20hazy%20city%20skyline%20air%20pollution%20crisis%20dramatic%20orange%20sky%20India%20atmospheric%20photography?width=800&height=500&seed=44&nologo=true",
     },
 ];
 
